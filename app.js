@@ -1,6 +1,7 @@
 require("dotenv").config();
 require("express-async-errors");
 const express = require("express");
+const { StatusCodes } = require("http-status-codes");
 const app = express();
 
 // connect DB
@@ -18,7 +19,7 @@ app.use(express.json());
 // extra packages
 
 app.get("/", (req, res) => {
-  res.status(200).send(`<h1>Welcome to the jobs API</h1>`);
+  res.status(StatusCodes.OK).send(`<h1>Welcome to the jobs API</h1>`);
 });
 // routes
 app.use("/api/v1/auth", authRouter);
