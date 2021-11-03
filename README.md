@@ -6,6 +6,8 @@ A node.js project tutorial by John Smilga which I will follow.
 
 Let's go!
 
+## Finished on 1.11.2021
+
 ## Setup by John
 
 ```bash
